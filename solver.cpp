@@ -332,29 +332,3 @@ void SYMMETRIC_COMPLEX_BLOCK_SOLVER::create_general_info()
 	general_slae_information += "________________________________\n";
 
 }
-
-//void SYMMETRIC_COMPLEX_BLOCK_SOLVER::direct_move(const vector<complex<double>>& vec, vector<complex<double>>& result)
-//{
-//	for(size_t k = 1; k <= n; k++)
-//	{
-//		complex<double> sum = 0.0;
-//
-//		for(size_t i = ig[k - 1]; i < ig[k]; i++)
-//			sum += L_gg[i] * result[jg[i]];
-//
-//		result[k - 1] = (vec[k - 1] - sum) / L_di[k - 1];
-//	}
-//}
-//
-//void SYMMETRIC_COMPLEX_BLOCK_SOLVER::reverse_move(const vector<complex<double>>& vec, vector<complex<double>>& result)
-//{
-//	for(size_t k = 0; k < n; k++)
-//		result[k] = vec[k];
-//
-//	for(size_t k = n - 1; k > 0; k--)
-//	{
-//		for(size_t i = ig[k]; i < ig[k + 1]; i++)
-//			result[jg[i]] -= L_gg[i] * result[k];
-//	}
-//
-//}
